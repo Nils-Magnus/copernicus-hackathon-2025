@@ -3,9 +3,10 @@
 Dieses README ist zugleich auch ein CHatGPT-Prompt um eine erste. einfache Satelliten-Abfrage durchzuführen und via dem CDSE-SDK direkt von den Satelliten-Datenspaces des Projekts abzuholen und zu rendern: 
 
 Schreibe ein Python-Programm, das mithilfe des offiziellen SDKs des Copernicus Data Space Ecosystem (CDSE) ein aktuelles Sentinel-2-Satellitenbild über der Berliner Siegessäule (Tiergarten) abruft und speichert.
+
 ## 🔧 Anforderungen:
 
-##    Geografischer Ausschnitt:
+###    Geografischer Ausschnitt:
 
         Zentrum: Siegessäule, Koordinaten
         📍 Breitengrad: 52.514543, Längengrad: 13.350119
@@ -14,19 +15,19 @@ Schreibe ein Python-Programm, das mithilfe des offiziellen SDKs des Copernicus D
 
         Seiten verlaufen in Ost-West und Nord-Süd Richtung
 
-        Die Seitenlänge des Quadrats ist jeweils 16 km (also sind die Diagonalen jeweils Sqrt(2) * 16 km ≈ 22.627 km
+        Die Seitenlänge des Quadrats ist jeweils 16 km, also sind die Diagonalen jeweils Sqrt(2) * 16 km ≈ 22.627 km
 
-##    Zielbild:
+###    Zielbild:
 
         Darstellung in True Color (RGB): Bänder B04, B03, B02
 
-        Bildauflösung: 2000 × 2000 Pixel
+        Bildauflösung: 2000 × 2000 Pixel (jedes Pixel ist 8x8 m² groß, sollte nochmal mit der Satellitenauflösung vergleichen werden)
 
         Exportformat: PNG-Datei
 
         Dateiname: siegessaeule_satellite.png
 
-##    CDSE-Datenabfrage:
+###    CDSE-Datenabfrage:
 
         Nutze das aktuellste verfügbare Sentinel-2 L2A-Produkt
 
@@ -46,6 +47,6 @@ Schreibe ein Python-Programm, das mithilfe des offiziellen SDKs des Copernicus D
 
     Optional: Registrierung bei dataspace.copernicus.eu zur Nutzung der API
 
-## Prompt
+### Prompt
 
 Generiere aus diesem Prompt auch ein Markdown-Dokument, ein Jupyter-Notebook und vor allem eine Python-Datei.
